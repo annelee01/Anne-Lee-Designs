@@ -1,0 +1,420 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700);
+/*RESET*/
+/* line 9, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* line 20, ../sass/_reset.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 23, ../sass/_reset.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 27, ../sass/_reset.scss */
+.clear {
+  clear: both;
+  margin: 0px;
+}
+
+/* line 31, ../sass/_reset.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/_base.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 23, ../sass/_base.scss */
+header {
+  background-color: #FFFFFF;
+  padding: 35px 0 70px 0;
+}
+@media all and (max-width: 650px) {
+  /* line 23, ../sass/_base.scss */
+  header {
+    padding: 35px 0 15px  0;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 31, ../sass/_base.scss */
+img {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+}
+
+/* line 35, ../sass/_base.scss */
+.prof-img {
+  padding: 42px 0px 0px 40px;
+}
+@media (min-width: 1px) and (max-width: 767px) {
+  /* line 35, ../sass/_base.scss */
+  .prof-img {
+    width: 50%;
+  }
+}
+
+/* line 41, ../sass/_base.scss */
+.about {
+  background-color: #fff;
+  text-align: left;
+  padding-top: 40px;
+}
+@media all and (max-width: 650px) {
+  /* line 41, ../sass/_base.scss */
+  .about {
+    padding-top: 20px;
+  }
+}
+
+/* line 49, ../sass/_base.scss */
+footer {
+  text-align: center;
+  padding: 40px 0px 20px 0px;
+}
+
+/* Global
+================================ */
+/* line 4, ../sass/_grid.scss */
+.grid-container {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0px auto;
+}
+
+/* line 9, ../sass/_grid.scss */
+img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  /* Columns
+  ================================ */
+  /* line 18, ../sass/_grid.scss */
+  .grid-container > [class^="grid-"] {
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 2%;
+  }
+  /* line 29, ../sass/_grid.scss */
+  .grid-container > [class^="grid-"]:first-child {
+    margin-left: 0;
+  }
+
+  /* line 32, ../sass/_grid.scss */
+  .grid-container > [class^="grid-"]:last-child {
+    float: right;
+  }
+
+  /* Columns are 65px wide, with 20px gutters
+  =========================================== */
+  /* line 39, ../sass/_grid.scss */
+  .grid-1 {
+    width: 6.5%;
+  }
+
+  /* line 42, ../sass/_grid.scss */
+  .grid-2 {
+    width: 15%;
+  }
+
+  /* line 45, ../sass/_grid.scss */
+  .grid-3 {
+    width: 23.5%;
+  }
+
+  /* line 48, ../sass/_grid.scss */
+  .grid-4 {
+    width: 32%;
+  }
+
+  /* line 51, ../sass/_grid.scss */
+  .grid-5 {
+    width: 40.5%;
+  }
+
+  /* line 54, ../sass/_grid.scss */
+  .grid-6 {
+    width: 49%;
+  }
+
+  /* line 57, ../sass/_grid.scss */
+  .grid-7 {
+    width: 57.5%;
+  }
+
+  /* line 60, ../sass/_grid.scss */
+  .grid-8 {
+    width: 66%;
+  }
+
+  /* line 63, ../sass/_grid.scss */
+  .grid-9 {
+    width: 74.5%;
+  }
+
+  /* line 66, ../sass/_grid.scss */
+  .grid-10 {
+    width: 83%;
+  }
+
+  /* line 69, ../sass/_grid.scss */
+  .grid-11 {
+    width: 91.5%;
+  }
+
+  /* line 72, ../sass/_grid.scss */
+  .grid-12 {
+    width: 100%;
+  }
+
+  /* Clearfix
+  ================================ */
+  /* line 80, ../sass/_grid.scss */
+  .grid-container:after,
+  .group:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 768px) and (min-width: 1px) and (max-width: 767px) {
+  /* line 18, ../sass/_grid.scss */
+  .grid-container > [class^="grid-"] {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 87, ../sass/_grid.scss */
+  .grid-container {
+    max-width: 1100px;
+  }
+}
+/* line 1, ../sass/_typography.scss */
+a:hover {
+  color: #83AAF8;
+  transition: color 0.2s ease;
+  cursor: url(../img/pointer.png), auto;
+}
+
+/* line 5, ../sass/_typography.scss */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 33px;
+  color: #3E3E3E;
+  line-height: 135%;
+  font-weight: 300;
+  margin-bottom: 25px;
+  max-width: 650px;
+  padding-left: 42px;
+}
+@media all and (max-width: 650px) {
+  /* line 5, ../sass/_typography.scss */
+  h1 {
+    font-size: 24px;
+    line-height: 145%;
+    padding-left: 15px;
+  }
+}
+
+/* line 20, ../sass/_typography.scss */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #3E3E3E;
+  max-width: 607px;
+  padding-left: 42px;
+  line-height: 150%;
+  padding-bottom: 15px;
+}
+/* line 29, ../sass/_typography.scss */
+h2 a {
+  border-bottom: 1px solid #3E3E3E;
+  padding-bottom: 3px;
+}
+/* line 32, ../sass/_typography.scss */
+h2 a:hover {
+  border-bottom: 1px solid #83AAF8;
+  transition: color 0.2s ease;
+}
+@media all and (max-width: 650px) {
+  /* line 20, ../sass/_typography.scss */
+  h2 {
+    padding-left: 15px;
+  }
+}
+
+/* line 41, ../sass/_typography.scss */
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #3E3E3E;
+  line-height: 175%;
+  padding-bottom: 10px;
+}
+/* line 48, ../sass/_typography.scss */
+h3 a {
+  font-weight: 300;
+  color: #858585;
+  border-bottom: 1px solid #858585;
+  padding-bottom: 2px;
+}
+/* line 53, ../sass/_typography.scss */
+h3 a:hover {
+  border-bottom: 1px solid #83AAF8;
+  transition: color 0.2s ease;
+}
+/* line 58, ../sass/_typography.scss */
+h3 li {
+  padding-bottom: 10px;
+  font-weight: 300;
+  color: #858585;
+}
+@media all and (max-width: 650px) {
+  /* line 41, ../sass/_typography.scss */
+  h3 {
+    padding-left: 15px;
+  }
+}
+
+/* line 67, ../sass/_typography.scss */
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3E3E3E;
+  line-height: 175%;
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 75, ../sass/_typography.scss */
+h4 a {
+  font-weight: 300;
+  color: #858585;
+  border-bottom: 1px solid #858585;
+  padding-bottom: 2px;
+}
+/* line 80, ../sass/_typography.scss */
+h4 a:hover {
+  border-bottom: 1px solid #83AAF8;
+  transition: color 0.2s ease;
+}
+
+/* line 86, ../sass/_typography.scss */
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #3E3E3E;
+  text-align: right;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+/* line 94, ../sass/_typography.scss */
+h5 a {
+  font-weight: 300;
+  color: #858585;
+  border-bottom: 1px solid #858585;
+  padding-bottom: 2px;
+}
+/* line 99, ../sass/_typography.scss */
+h5 a:hover {
+  border-bottom: 1px solid #83AAF8;
+  transition: color 0.2s ease;
+}
+
+/* line 105, ../sass/_typography.scss */
+.dribbble {
+  color: #ea4c89;
+}
+
+/* line 108, ../sass/_typography.scss */
+.instagram {
+  color: #2b82ad;
+}
+
+/* line 111, ../sass/_typography.scss */
+.main-nav {
+  text-align: right;
+}
+
+/* line 114, ../sass/_typography.scss */
+.main-nav a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #5286EC;
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 65px;
+  line-height: 200%;
+}
+/* line 122, ../sass/_typography.scss */
+.main-nav a:hover {
+  color: #83AAF8;
+  transition: color 0.2s ease;
+  cursor: url(../img/pointer.png), auto;
+}
+
+@media (min-width: 768px) {
+  /* line 127, ../sass/_typography.scss */
+  .main-nav li {
+    display: inline-block;
+  }
+}
+
+/* line 132, ../sass/_typography.scss */
+footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #E3E3E3;
+}
